@@ -1,0 +1,5 @@
+a=`for i in {1..3}; do echo "$i"; done | sort -R` && ./a.out $a
+
+a=`for i in {-10..9}; do echo "$i"; done | sort -R` && ./push_swap $a | wc -l
+
+gcc *.c ../Libft/*.c ../ft_printf/*.c -g3 -fsanitize=address
