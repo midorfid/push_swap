@@ -6,7 +6,7 @@
 /*   By: ashevchu <ashevchu@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/02/01 19:08:01 by ashevchu      #+#    #+#                 */
-/*   Updated: 2023/07/17 13:22:17 by ashevchu      ########   odam.nl         */
+/*   Updated: 2023/07/31 15:13:01 by ashevchu      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -79,7 +79,7 @@ int	main(int argc, char **argv)
 		sort_size4_list(a, b, data, data2);
 	else
 		sort_5h_elems(&data, a, b, &data2);
-	// print_lst(*a);
+	print_lst(*a);
 	// if (check_sorted(a) && ft_printf("not sorted"))
 	// 	exit (EXIT_FAILURE);
 	free_stack(a);
@@ -87,6 +87,7 @@ int	main(int argc, char **argv)
 		free_stack(b);
 	else
 		free(b);
+	return (0);
 	// system("leaks a.out");
 }
 
